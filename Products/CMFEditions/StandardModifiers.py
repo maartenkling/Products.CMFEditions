@@ -968,7 +968,7 @@ class AbortVersioningOfLargeFilesAndImages(ConditionalTalesModifier):
     object in a specified field is larger than a fixed default"""
 
     field_names = ('file', 'image')
-    max_size = 126214400 # This represents a 400 element long Pdata list
+    max_size = 524288000 # This represents a 400 element long Pdata list
 
     implements(IConditionalTalesModifier, ICloneModifier)
 
